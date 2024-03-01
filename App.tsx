@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Value from './src/components/Value';
+
 import RingProgress from './src/components/RingProgress';
 import { useState } from 'react';
 import useHealthData from './src/hooks/useHealthData';
@@ -21,6 +22,7 @@ export default function App() {
   };
 
   return (
+   
     <View style={styles.container}>
       <View style={styles.datePicker}>
         <AntDesign
@@ -30,7 +32,7 @@ export default function App() {
           color="#C3FF53"
         />
         <Text style={styles.date}>{date.toDateString()}</Text>
-
+       
         <AntDesign
           onPress={() => changeDate(1)}
           name="right"
@@ -38,7 +40,7 @@ export default function App() {
           color="#C3FF53"
         />
       </View>
-
+      
       <RingProgress
         radius={150}
         strokeWidth={50}

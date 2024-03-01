@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Project1",
-    "slug": "Project1",
+    "name": "Ai Health Tracker Voice assistant Assistant",
+    "slug": "Ai Health Tracker Voice assistant Assistant",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -33,15 +33,17 @@
       "./androidManifestPlugin.js",
       [
         "expo-build-properties",
+        
         {
           "android": {
-            "compileSdkVersion": 33,
-            "targetSdkVersion": 33,
-            "buildToolsVersion": "33.0.0",
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "33.0.1",
             "minSdkVersion": 26
           }
         }
       ]
+      
     ]
   }
 }
